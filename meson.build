@@ -7,6 +7,8 @@ project('libsass', 'c', 'cpp',
             'buildtype=debugoptimized',
         ])
 
+pkg = import('pkgconfig')
+
 add_project_arguments(
   '-DLIBSASS_VERSION="@0@"'.format(meson.project_version()),
   language: ['cpp'])
